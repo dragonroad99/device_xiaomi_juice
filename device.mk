@@ -35,7 +35,10 @@ PRODUCT_PACKAGES += android.hardware.fastboot@1.0-impl-mock
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant.antradio_library \
-    com.dsi.ant@1.0
+    com.dsi.ant@1.0.vendor
+
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -66,6 +69,12 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan
+
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio \
 
 # Vulkan
 PRODUCT_PACKAGES += \
