@@ -36,6 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
    dalvik.vm.boot-dex2oat-threads=8 \
    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
+# FM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.fm.use_audio_session=true
+
 # LMKD
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.psi_complete_stall_ms=150 \
