@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_juice.mk
+    $(LOCAL_DIR)/exthm_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_juice-user \
-    havoc_juice-userdebug \
-    havoc_juice-eng
+    exthm_juice-user \
+    exthm_juice-userdebug \
+    exthm_juice-eng
